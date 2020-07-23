@@ -1,3 +1,43 @@
+Ponds -< Frogs -< Tadpoles 
+
+Pond
+name
+water type
+has_many frogs 
+has many tadpoles through frogs
+
+Frogs
+name 
+color 
+belongs_to pond 
+has_many tadpoles
+- can create tadpoles 
+
+Tadpoles
+name 
+color 
+belongs_to frog
+belongs to a pond through a frog
+
+- can become a frog
+  makes a new frog with the tadpole's name, color, and pond
+  has a button called 'Become a frog' on the tadpole show page
+  can click on the button and the tadpole becomes a frog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Rails Pollywog Ranch Lab
 
 ![tadpoles and frogs](https://raw.githubusercontent.com/learn-co-curriculum/rails-pollywog-ranch/master/app/assets/images/intro-image.jpeg)
@@ -50,4 +90,3 @@ Here's a [demo](http://the-pollywog-ranch.herokuapp.com) of what we're aiming fo
 * [Pivotal Labs — Delegation](https://content.pivotal.io/blog/rails-delegates-are-even-more-useful-than-i-knew)
 * [Tutorials Point: Ruby on Rails](http://www.tutorialspoint.com/ruby-on-rails/) — [Ruby on Rails Directory Structure](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
 * [Rails Guides on Routing](http://guides.rubyonrails.org/routing.html) — [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources)
-
