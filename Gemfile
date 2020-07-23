@@ -10,6 +10,7 @@ gem 'bootsnap'
 gem 'bootstrap-sass'
 gem 'sqlite3', '~>1.3.6'
 gem 'factory_bot'
+gem 'sprockets-rails', '2.3.3'
 
 
 group :development, :test do
